@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css?family=Vollkorn');
+
+body {
+}
+
+.black {
+  color: #1a1a1a;
+}
+.white {
+  color: #f2f2f2;
+}
+
+.navbar {
+  background-color: black;
+}
+
+nav-link :hover {
+  color: white;
+}
+
+.main {
+    padding-bottom: 35px;
+}
+
+.bgText {
+  position: absolute;
+}
+
+.main {
+  position: relative;
+}
+
+.bgMain {
+  height: auto;
+  max-width: 100%;
+}
+
+.gradient {
+  height: 200px;
+  background: linear-gradient(180deg, #010005, #010005, #ffffff,#ffffff);
+  background-size: 150%;
+  -webkit-animation: AnimationName 7s ease infinite;
+  -moz-animation: AnimationName 7s ease infinite;
+  animation: AnimationName 7s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:58% 0%}
+    50%{background-position:43% 100%}
+    100%{background-position:58% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:58% 0%}
+    50%{background-position:43% 100%}
+    100%{background-position:58% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:58% 0%}
+    50%{background-position:43% 100%}
+    100%{background-position:58% 0%}
+}
+
+.title {
+  font-size: 5vh;
+  font-family: 'Vollkorn', serif;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.skills {
+  padding-top: 10px;
+}
+
+.skillsItem {
+    font-size: 1.9vh;
+    text-align: center;
+}
+
+.diagram {
+	border: 23px solid #95CD8B;
+	border-radius: 50%;
+	border-right: 23px solid #D0E6BB;
+	font-size: 2.5vh;
+	height: 100px;
+	line-height: 55px;
+	text-align: center;
+	width: 100px;
+  margin: 5px 0px;
+}
+
+.diagram:hover {
+  box-shadow: 0px 0px 5px black
+}
+
+.diagramFifth {
+  border-bottom: 23px solid #D0E6BB;
+}
+
+.diagramQuarter {
+  border: 23px solid #D0E6BB;
+  border-right: 23px solid #95CD8B;
+}
+
+.moreSkills,  .moreSkills a {
+  color: #1a1a1a;
+  text-align: center;
+  font-size: 2.6vh;
+  font-family: 'Vollkorn', serif;
+  text-decoration: none;
+  margin: 10px 0px;
+}
+
+.moreSkills a:hover {
+  color:#95CD8B;
+}
+
+.collapsed i{
+  transform: rotate(180deg);
+}
+
+.educationList i{
+  text-align: center;
+  padding: 5px;
+}
+
+.educationList h4 {
+  min-height: 130px;
+}
+
+.educationList p {
+  min-height: 72px;
+}
+
+.card:hover {
+  box-shadow: 0px 10px 20px black;
+}
+
+.carousel {
+  background-color: #ebe8e8;
+}
+.carousel-caption {
+  color: #212529;
+  top: 35px;
+  right: -36%;
+}
+
+.contacts a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.carousel-item {
+  max-height: 445px;
+}
+
+.transition-rotate {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  transition: 0.6s linear;
+}
+.transition-rotate:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+  color: #95CD8B;
+}
+
+.footer {
+  margin-top: 100px;
+}
