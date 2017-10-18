@@ -4,18 +4,19 @@ body {
 }
 
 .black {
-  color: #1a1a1a;
+    color: #1a1a1a;
 }
+
 .white {
-  color: #f2f2f2;
+    color: #f2f2f2;
 }
 
 .navbar {
-  background-color: black;
+    background-color: black;
 }
 
 nav-link :hover {
-  color: white;
+    color: white;
 }
 
 .main {
@@ -23,52 +24,72 @@ nav-link :hover {
 }
 
 .bgText {
-  position: absolute;
+    position: absolute;
 }
 
 .main {
-  position: relative;
+    position: relative;
 }
 
 .bgMain {
-  height: auto;
-  max-width: 100%;
+    height: auto;
+    max-width: 100%;
 }
 
 .gradient {
-  height: 200px;
-  background: linear-gradient(180deg, #010005, #010005, #ffffff,#ffffff);
-  background-size: 150%;
-  -webkit-animation: AnimationName 7s ease infinite;
-  -moz-animation: AnimationName 7s ease infinite;
-  animation: AnimationName 7s ease infinite;
+    height: 200px;
+    background: linear-gradient(180deg, #010005, #010005, #ffffff, #ffffff);
+    background-size: 150%;
+    -webkit-animation: AnimationName 7s ease infinite;
+    -moz-animation: AnimationName 7s ease infinite;
+    animation: AnimationName 7s ease infinite;
 }
 
 @-webkit-keyframes AnimationName {
-    0%{background-position:58% 0%}
-    50%{background-position:43% 100%}
-    100%{background-position:58% 0%}
+    0% {
+        background-position: 58% 0%
+    }
+    50% {
+        background-position: 43% 100%
+    }
+    100% {
+        background-position: 58% 0%
+    }
 }
+
 @-moz-keyframes AnimationName {
-    0%{background-position:58% 0%}
-    50%{background-position:43% 100%}
-    100%{background-position:58% 0%}
+    0% {
+        background-position: 58% 0%
+    }
+    50% {
+        background-position: 43% 100%
+    }
+    100% {
+        background-position: 58% 0%
+    }
 }
+
 @keyframes AnimationName {
-    0%{background-position:58% 0%}
-    50%{background-position:43% 100%}
-    100%{background-position:58% 0%}
+    0% {
+        background-position: 58% 0%
+    }
+    50% {
+        background-position: 43% 100%
+    }
+    100% {
+        background-position: 58% 0%
+    }
 }
 
 .title {
-  font-size: 5vh;
-  font-family: 'Vollkorn', serif;
-  text-align: center;
-  margin-top: 40px;
+    font-size: 5vh;
+    font-family: 'Vollkorn', serif;
+    text-align: center;
+    margin-top: 40px;
 }
 
 .skills {
-  padding-top: 10px;
+    padding-top: 10px;
 }
 
 .skillsItem {
@@ -77,94 +98,109 @@ nav-link :hover {
 }
 
 .diagram {
-	border: 23px solid #95CD8B;
-	border-radius: 50%;
-	border-right: 23px solid #D0E6BB;
-	font-size: 2.5vh;
-	height: 100px;
-	line-height: 55px;
-	text-align: center;
-	width: 100px;
-  margin: 5px 0px;
+    border: 23px solid #95CD8B;
+    border-radius: 50%;
+    border-right: 23px solid #D0E6BB;
+    font-size: 2.5vh;
+    height: 100px;
+    line-height: 55px;
+    text-align: center;
+    width: 100px;
+    margin: 5px 0px;
 }
 
 .diagram:hover {
-  box-shadow: 0px 0px 5px black
+    box-shadow: 0px 0px 5px black
 }
 
 .diagramFifth {
-  border-bottom: 23px solid #D0E6BB;
+    border-bottom: 23px solid #D0E6BB;
 }
 
 .diagramQuarter {
-  border: 23px solid #D0E6BB;
-  border-right: 23px solid #95CD8B;
+    border: 23px solid #D0E6BB;
+    border-right: 23px solid #95CD8B;
 }
 
-.moreSkills,  .moreSkills a {
-  color: #1a1a1a;
-  text-align: center;
-  font-size: 2.6vh;
-  font-family: 'Vollkorn', serif;
-  text-decoration: none;
-  margin: 10px 0px;
+.moreSkills, .moreSkills a {
+    color: #1a1a1a;
+    text-align: center;
+    font-size: 2.6vh;
+    font-family: 'Vollkorn', serif;
+    text-decoration: none;
+    margin: 10px 0px;
 }
 
 .moreSkills a:hover {
-  color:#95CD8B;
+    color: #95CD8B;
 }
 
-.collapsed i{
-  transform: rotate(180deg);
+.collapsed i {
+    transform: rotate(180deg);
 }
 
-.educationList i{
-  text-align: center;
-  padding: 5px;
+.educationList i {
+    text-align: center;
+    padding: 5px;
 }
 
 .educationList h4 {
-  min-height: 130px;
+    min-height: 130px;
 }
 
 .educationList p {
-  min-height: 72px;
+    min-height: 72px;
 }
 
 .card:hover {
-  box-shadow: 0px 10px 20px black;
+    box-shadow: 0px 10px 20px black;
 }
 
 .carousel {
-  background-color: #ebe8e8;
+    background-color: #ebe8e8;
 }
+
 .carousel-caption {
-  color: #212529;
-  top: 35px;
-  right: -36%;
+    color: #212529;
+    top: 35px;
+    right: -36%;
 }
 
 .contacts a {
-  text-decoration: none;
-  color: inherit;
+    text-decoration: none;
+    color: inherit;
 }
 
 .carousel-item {
-  max-height: 445px;
+    max-height: 445px;
 }
 
 .transition-rotate {
-  position: relative;
-  z-index: 2;
-  text-align: center;
-  transition: 0.6s linear;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    transition: 0.3s linear;
 }
+
 .transition-rotate:hover {
-  -webkit-transform: rotate(360deg);
-  transform: rotate(360deg);
-  color: #95CD8B;
+    -webkit-transform: rotate(4deg);
+    transform: rotate(4deg);
+    color: #95CD8B;
+}
+
+.transition-rotate p {
+    opacity: 0;
+    transition: opacity 0.2s linear, margin 0.2s linear;
+    margin-top: 10px;
+    font-size: 1.8vh;
+}
+
+.transition-rotate:hover p {
+    opacity: 1;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 .footer {
-  margin-top: 100px;
+    margin-top: 40px;
 }
