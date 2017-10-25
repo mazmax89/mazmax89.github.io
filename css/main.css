@@ -82,7 +82,7 @@ nav-link :hover {
 }
 
 .title {
-    font-size: 5vh;
+    font-size: 4.8vh;
     font-family: 'Vollkorn', serif;
     text-align: center;
     margin-top: 40px;
@@ -148,13 +148,18 @@ nav-link :hover {
     min-height: 130px;
 }
 
-.educationList p {
+.card-body {
+    padding: 0px;
+}
+
+.cardt {
     min-height: 70px;
 }
 
 .card {
     margin: 10px 0px;
     text-align: center;
+    padding: 10px;
 }
 
 .card:hover {
