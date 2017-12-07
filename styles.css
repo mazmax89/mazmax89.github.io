@@ -1,0 +1,388 @@
+@font-face {
+  font-family: FuturaPTBook;
+  src: url(fonts/FuturaPTBook.otf);
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+.mainContainer {
+  height: 233%;
+  background-color: #191b44;
+  font-family: 'FuturaPTBook';
+}
+
+.nav-item a {
+  color: white;
+}
+
+.nav-item a:hover {
+  background-color: #64b3df;
+  cursor: pointer;
+  color: white;
+}
+
+.madIdeas {
+  padding-top: 135px;
+  background-color: #fff;
+  height: 300px;
+  width: 27.6%;
+  border-top-left-radius: 20px;
+  margin-left: 30px;
+  margin-top: 15px;
+  float: left;
+  box-shadow: -1px 1px 71px 1px black;
+  color: black;
+  text-align: center;
+  font-size: 25px;
+}
+
+.link {
+  color: Black;
+}
+
+.link a:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.nav {
+  margin-right: 44px;
+}
+
+.nav-item {
+  float: right;
+  color: #fff;
+}
+
+.hi {
+  text-align: left;
+  padding-left: 20px;
+  padding-top: 25px;
+  color: #fff;
+  font-size: 20px;
+  margin-left: 476px;
+  width: 64.1%;
+  height: 300px;
+  margin-top: 15px;
+  background-color: #313163;
+  border-top-right-radius: 20px;
+  box-shadow: -1px 1px 71px 1px black;
+}
+
+.hi p {
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+.hi a {
+  background-color: #75c4f4;
+  border-radius: 20px;
+  border-color: #75c4f4;
+  border-style: none;
+  width: 100px;
+  height: 30px;
+  color: #fff;
+  float: right;
+  margin-top: 136px;
+  margin-right: 50px;
+  font-size: 15px;
+  padding-top: 4px;
+  text-align: center;
+}
+
+.hi a:hover {
+  cursor: pointer;
+  background-color: #4682B4;
+  color: white;
+  text-decoration: none;
+}
+
+.gradient {
+  text-align: center;
+  color: #1b1b48;
+  font-size: 115px;
+  background: linear-gradient(to right, #f11986, orange);
+  width: 56.4%;
+  height: 300px;
+  margin-left: 30px;
+  margin-top: 20px;
+  float: left;
+  box-shadow: -1px 1px 71px 1px black;
+  padding-top: 70px;
+}
+
+.gradient a {
+  color: #1b1b48;
+}
+
+.gradient a:hover {
+  color: #1b1b48;
+  cursor: pointer;
+}
+
+.cardGradient {
+  background: linear-gradient(to right, #f11986, orange);
+  border: 0px !important;
+  height: 380px;
+}
+
+.card {
+  font-size: 14px;
+}
+
+.card img {
+  height: 100px;
+}
+
+.blue {
+  background-color: #51b09c;
+  height: 300px;
+  width: 35.4%;
+  margin-left: 919px;
+  margin-top: 20px;
+  box-shadow: -1px 1px 71px 1px black;
+}
+
+.purple {
+  width: 27.6%;
+  float: left;
+  height: 300px;
+  background-color: #323164;
+  margin-top: 20px;
+  margin-left: 29px;
+  box-shadow: -1px 1px 71px 1px black;
+}
+
+.e-journal {
+  text-align: center;
+  width: 27.5%;
+  float: left;
+  height: 300px;
+  margin-left: 20px;
+  margin-top: 20px;
+  background-color: #80c885;
+  box-shadow: -1px 1px 71px 1px black;
+  padding-top: 120px;
+  font-size: 35px;
+}
+
+.e-journal span {
+  margin-right: -9px;
+}
+
+.diagram {
+  margin-left: 919.3px;
+  margin-top: 20px;
+  padding-top: 100px;
+  width: 35.4%;
+  height: 300px;
+  background-color: #313063;
+  box-shadow: -1px 1px 71px 1px black;
+}
+
+.diagram h5 {
+  float: left;
+  color: white;
+  padding-right: 71px;
+}
+
+.h5text {
+  margin-top: 10px;
+  margin-left: 64px;
+}
+
+.containerDiagram {
+  margin-left: 36%%;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+  position: relative;
+}
+
+.sector {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform-origin: left bottom;
+}
+
+.containerDiagram:after {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  background: #313063;
+  border-radius: 50%;
+  top: 25%;
+  left: 25%;
+}
+
+.containerDiagram:hover {
+  box-shadow: 0px 0px 5px 2px black;
+}
+
+.oneLine {
+  width: 27.5%;
+  float: left;
+  margin-left: 30px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.first {
+  height: 75px;
+  background-color: #fff;
+  box-shadow: -1px 1px 71px 1px black;
+  text-align: center;
+  font-size: 42px;
+  padding-top: 15px;
+}
+
+.git {
+  color: #fff;
+  font-size: 33px;
+  background: linear-gradient(to right, #f11986, orange);
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  background-color: red;
+  margin-left: 46%;
+}
+
+.second {
+  padding-top: 15px;
+  height: 75px;
+  background-color: #e18f79;
+  box-shadow: 1px 0px 20px 1px black;
+  font-size: 36px;
+  text-align: center;
+}
+
+.fb {
+  color: #e18f79;
+  font-size: 33px;
+  background: linear-gradient(to right, #f11986, orange);
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  background-color: red;
+  margin-left: 46%;
+}
+
+.third {
+  font-size: 26px;
+  height: 75px;
+  background-color: #4eb19e;
+  box-shadow: 1px 0px 20px 1px black;
+  padding-top: 15px;
+}
+
+.google {
+  text-align: center;
+  color: #4eb19e;
+  font-size: 23px;
+  background: linear-gradient(to right, #f11986, orange);
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  background-color: red;
+  margin-left: 46%;
+  padding-top: 3px;
+}
+
+.fourth {
+  padding-top: 15px;
+  height: 75px;
+  background-color: #292c5b;
+  box-shadow: 1px 0px 20px 1px black;
+}
+
+.call {
+  padding-top: 4px;
+  text-align: center;
+  color: #292c5b;
+  font-size: 23px;
+  background: linear-gradient(to right, #f11986, orange);
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  background-color: red;
+  margin-left: 46%;
+}
+
+.phone {
+  font-size: 80px;
+  text-align: center;
+  padding-left: 5px;
+  padding-top: 100px;
+  height: 300px;
+  background-color: #4f3d89;
+  border-bottom-left-radius: 20px;
+  margin-top: 20px;
+  box-shadow: -1px 1px 71px 1px black;
+}
+
+.phone a {
+  color: #81c18c;
+}
+
+.phone a:hover {
+  color: #81c18c;
+}
+
+.large {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  height: 620px;
+  width: 64.5%;
+  background-color: #e18f7a;
+  border-bottom-right-radius: 20px;
+  margin-top: 20px;
+  margin-left: 473px;
+  box-shadow: -1px 1px 71px 1px black;
+}
+
+.large img {
+  height: 79%;
+}
+
+.carousel-item img {
+  margin-left: 220px;
+}
+
+.transition-rotate {
+  transition: 0.3s linear;
+}
+
+.transition-rotate p {
+  margin-left: 40px;
+  margin-top: -28px;
+  color: white;
+  width: 77px;
+}
+
+.transition-rotate:hover {
+  -webkit-transform: rotate(4deg);
+  transform: rotate(4deg);
+}
+
+.transition-rotate p {
+  opacity: 0;
+  transition: opacity 0.2s linear, margin 0.2s linear;
+  font-size: 2vh;
+}
+
+.transition-rotate:hover p {
+  opacity: 1;
+  margin-bottom: 10px;
+}
