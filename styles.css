@@ -99,15 +99,17 @@ body {
 .cardGradient {
   background: linear-gradient(to right, #f11986, orange);
   border: 0px !important;
-  height: 380px;
+  height: 374px;
+  font-size: 1.6vh;
+  z-index: 200;
 }
 
-.card {
-  font-size: 14px;
+.card h4 {
+  font-size: 1.8vh !important;
 }
 
 .card img {
-  height: 100px;
+  height: 20%;
 }
 
 .blueBlock {
@@ -127,7 +129,6 @@ body {
   font-size: 32px;
   padding: 140px 40px !important;
   margin-right: 20px;
-  z-index: -1;
 }
 
 .purpleBlock a {
@@ -137,7 +138,6 @@ body {
 .mintBlock {
   background-color: #7eca84;
   padding-top: 15px;
-  z-index: -1;
 }
 
 .mintBlock img {
