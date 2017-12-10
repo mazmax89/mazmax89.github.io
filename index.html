@@ -36,7 +36,8 @@
 
     <div class="row justify-content-center">
       <div class="col-md-4 col-4 block firstBlock">
-        <i class="fa fa-user-o" aria-hidden="true"></i>
+        <object class="col-12" type="image/svg+xml" data="img/user.svg">
+</object>
       </div>
 
       <div class="col-md-7 col-7 block secondBlock">
@@ -108,7 +109,7 @@
         </a>
       </div>
       <div class="col-md-7 col-7 block mintBlock">
-        <a class="link" target="_blank" href="https://github.com/mazmax89?tab=repositories">
+        <a target="_blank" href="https://github.com/mazmax89?tab=repositories">
           <div class="row justify-content-center">
             <img src="img/7.jpg" alt="project example" class="col-md-10">
           </div>
@@ -120,30 +121,26 @@
       <div class="col-md-4 col-4 twoColumn">
         <div class="col-md-12 col-12 block contactsBlock">
           <div class="four">
-            <div class="first contactsItem">
-              <a class="link" target="_blank" href="https://github.com/mazmax89?tab=repositories">
-                <div class="git circleIcon">
-                  <i class="fa fa-github-alt" aria-hidden="true"></i>
-                </div>
-              </a>
-            </div>
-            <div class="second contactsItem">
-              <a class="link" target="_blank" href="https://www.facebook.com/mazmax89">
-                <div class="fb circleIcon">
-                  <i class="fa fa-facebook" aria-hidden="true"></i>
-                </div>
-              </a>
-            </div>
-            <div class="third contactsItem">
-              <a class="link" target="_blank" href="https://plus.google.com/u/0/107254484159529169785">
-                <div class="google circleIcon">
-                  <i class="fa fa-google-plus" aria-hidden="true"></i>
-                </div>
-              </a>
-            </div>
+            <a class="link" target="_blank" href="https://github.com/mazmax89?tab=repositories">
+              <div class="first contactsItem">
+                <img src="img/github.png" alt="github">
+              </div>
+            </a>
+            <a class="link" target="_blank" href="https://www.facebook.com/mazmax89">
+              <div class="second contactsItem">
+                <img src="img/facebook.png" alt="github">
+              </div>
+            </a>
+            <a class="link" target="_blank" href="https://plus.google.com/u/0/107254484159529169785">
+
+              <div class="third contactsItem">
+                <img src="img/google+.png" alt="github">
+              </div>
+            </a>
             <div class="fourth contactsItem">
-              <div class="call circleIcon">
-                <i class="fa fa-phone" aria-hidden="true"></i>
+              <div class="call transition-rotate">
+                <img src="img/phone.png" alt="github">
+                <span>+48 796741722</span>
               </div>
             </div>
           </div>
@@ -156,12 +153,24 @@
         </div>
       </div>
       <div class="col-md-7 col-7 block  largeBlock">
+        <div class="skillsLabels">
+          <div class="row justify-content-center">
+            <span>My skills</span>
+          </div>
+          <span>Html</span>
+          <span>Css</span>
+          <span>React</span>
+          <span>Redux</span>
+          <span>Express</span>
+          <span>MySql</span>
+          <span>SCSS</span>
+          <span>Bootstrap</span>
+        </div>
         <div class="row justify-content-center">
           <div class="containerDiagram"></div>
         </div>
       </div>
     </div>
-
   </div>
 </body>
 <script src="https://use.fontawesome.com/6713650c40.js"></script>
@@ -171,16 +180,13 @@
 
 <script type="text/javascript">
   var dataset = [{
-    value: 8,
-    color: '#bb2864'
-  }, {
-    value: 12,
+    value: 20,
     color: '#9786bd'
   }, {
-    value: 15,
+    value: 30,
     color: '#1a1b49'
   }, {
-    value: 65,
+    value: 50,
     color: '#7eca84'
   }];
 

@@ -63,6 +63,10 @@ body {
   color: #1b1b48;
 }
 
+.firstBlock object {
+  max-height: 280px;
+}
+
 .secondBlock {
   color: #fff;
   font-size: 20px;
@@ -172,18 +176,22 @@ body {
 
 .contactsItem {
   height: 75px;
-  box-shadow: -1px 1px 71px 1px black;
+  box-shadow: 0px 10px 60px 0px black;
   font-size: 42px;
   padding-top: 8px;
   text-align: center;
 }
 
-.circleIcon {
-  background: linear-gradient(to right, #f11986, orange);
-  height: 60px;
-  width: 60px;
-  border-radius: 30px;
-  margin-left: 40.7%;
+.contactsItem img {
+  vertical-align: baseline;
+}
+
+.link div {
+  transition: height 0.2s linear;
+}
+
+.link:hover div {
+  height: 80px;
 }
 
 .first {
@@ -219,7 +227,7 @@ body {
 }
 
 .containerDiagram {
-  margin-top: 120px;
+  margin-top: 30px;
   width: 350px;
   height: 350px;
   overflow: hidden;
@@ -247,6 +255,49 @@ body {
   left: 25%;
 }
 
-.containerDiagram:hover {
-  box-shadow: 0px 0px 5px 2px black;
+.largeBlock span {
+  margin: 0px 25px;
+  opacity: 0;
+  font-size: 3vh;
+  transition: opacity 0.2s linear, margin 0.2s linear;
+}
+
+.largeBlock:hover span {
+  opacity: 1;
+}
+
+.skillsLabels {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.transition-rotate {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  transition: 0.3s linear;
+}
+
+.transition-rotate:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+  color: #95CD8B;
+  -webkit-transform: rotate(4deg);
+  transform: rotate(4deg);
+  color: #95CD8B;
+  cursor: pointer;
+}
+
+.transition-rotate span {
+  position: absolute;
+  top: 15px;
+  left: 55px;
+  width: 104px;
+  opacity: 0;
+  transition: opacity 0.2s linear, margin 0.2s linear;
+  font-size: 1.7vh;
+}
+
+.transition-rotate:hover span {
+  opacity: 1;
 }
