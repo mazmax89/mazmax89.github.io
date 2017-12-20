@@ -22,6 +22,7 @@ body {
   height: 620px !important;
   border-bottom-right-radius: 20px;
   background-color: #e2939a;
+  padding-top: 10px;
 }
 
 .link {
@@ -226,46 +227,8 @@ body {
   color: #292c5b;
 }
 
-.containerDiagram {
-  margin-top: 30px;
-  width: 350px;
-  height: 350px;
-  overflow: hidden;
-  border-radius: 50%;
-  position: relative;
-}
-
-.sector {
-  width: 50%;
-  height: 50%;
-  position: absolute;
-  left: 50%;
-  top: 0;
-  transform-origin: left bottom;
-}
-
-.containerDiagram:after {
-  content: '';
-  position: absolute;
-  width: 50%;
-  height: 50%;
-  background: #e2939a;
-  border-radius: 50%;
-  top: 25%;
-  left: 25%;
-}
-
-.largeBlock {
-  padding-top: 10px;
-}
-
 .largeBlock canvas {
   max-height: 590px;
-}
-
-.skillsLabels {
-  margin-top: 30px;
-  text-align: center;
 }
 
 .transition-rotate {
