@@ -229,6 +229,7 @@ body {
 
 .largeBlock canvas {
   max-height: 590px;
+  max-width: 590px;
 }
 
 .transition-rotate {
