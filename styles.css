@@ -227,7 +227,7 @@ body {
   color: #292c5b;
 }
 
-.largeBlock canvas {
+canvas {
   max-height: 590px;
   max-width: 590px;
 }
