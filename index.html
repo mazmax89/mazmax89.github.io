@@ -152,20 +152,8 @@
         </div>
       </div>
       <div class="col-md-7 col-7 block  largeBlock" id="skills">
-        <div class="skillsLabels">
-          <div class="row justify-content-center">
-            <span>My skills</span>
-          </div>
-          <span>Html 70%</span>
-          <span>Css 70%</span>
-          <span>Bootstrap 60%</span>
-          <span>React 50%</span>
-          <span>Redux 50%</span>
-          <span>SCSS 50%</span>
-          <span>Express 40%</span>
-        </div>
-        <div class="row justify-content-center">
-          <div class="containerDiagram"></div>
+        <div class="justify-content-center">
+          <canvas id="diagram" width="200" height="200"></canvas>
         </div>
       </div>
     </div>
@@ -179,56 +167,40 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/Chart.bundle.min.js"></script>
-
 <script type="text/javascript">
-  var dataset = [{
-    value: 20,
-    color: '#9786bd'
-  }, {
-    value: 30,
-    color: '#1a1b49'
-  }, {
-    value: 50,
-    color: '#7eca84'
-  }];
-
-  var maxValue = 25;
-  var container = $('.containerDiagram');
-
-  var addSector = function(data, startAngle, collapse) {
-    var sectorDeg = 3.6 * data.value;
-    var skewDeg = 90 + sectorDeg;
-    var rotateDeg = startAngle;
-    if (collapse) {
-      skewDeg++;
-    }
-
-    var sector = $('<div>', {
-      'class': 'sector'
-    }).css({
-      'background': data.color,
-      'transform': 'rotate(' + rotateDeg + 'deg) skewY(' + skewDeg + 'deg)'
-    });
-    container.append(sector);
-
-    return startAngle + sectorDeg;
-  };
-
-  dataset.reduce(function(prev, curr) {
-    return (function addPart(data, angle) {
-      if (data.value <= maxValue) {
-        return addSector(data, angle, false);
+  var ctx = document.getElementById("diagram").getContext('2d');
+  var myPieChart = new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+      labels: ["HTML, CSS", "React, Redux, JS, Bootstrap", "WebPack, Node, Express", "TypeScript, Rest, REST, MySQL"],
+      datasets: [{
+        label: '# of Votes',
+        data: [80, 60, 30, 20],
+        backgroundColor: [
+          'rgba(27, 27, 72, 1)',
+          'rgba(126, 202, 132, 1)',
+          'rgba(187, 40, 100, 1)',
+          'rgba(151, 134, 189, 1)'
+        ],
+        borderColor: 'rgba(226, 147, 154, 1)',
+        borderWidth: 7,
+        hoverBorderWidth: 0
+      }],
+    },
+    options: {
+      legend: {
+        display: false
+      },
+      responsive: true,
+      tooltips: {
+        backgroundColor: 'rgba(255, 255, 255, 1)',
+        bodyFontColor: '#343a40',
+        xPadding: 5,
+        yPadding: 15,
+        bodyFontSize: 14,
       }
-
-      return addPart({
-        value: data.value - maxValue,
-        color: data.color
-      }, addSector({
-        value: maxValue,
-        color: data.color,
-      }, angle, true));
-    })(curr, prev);
-  }, 0);
+    },
+  });
 </script>
 
 </html>

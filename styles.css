@@ -255,15 +255,12 @@ body {
   left: 25%;
 }
 
-.largeBlock span {
-  margin: 0px 25px;
-  opacity: 0;
-  font-size: 3vh;
-  transition: opacity 0.2s linear, margin 0.2s linear;
+.largeBlock {
+  padding-top: 10px;
 }
 
-.largeBlock:hover span {
-  opacity: 1;
+.largeBlock canvas {
+  max-height: 590px;
 }
 
 .skillsLabels {
