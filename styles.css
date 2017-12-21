@@ -3,6 +3,43 @@
   src: url(fonts/FuturaPTBook.otf);
 }
 
+@media (max-width: 767px) {
+  .gradientBlock {
+    margin-right: 0px !important;
+  }
+  .rowForMobile {
+    padding: 0px 5px;
+  }
+  .purpleBlock {
+    padding: 130px 20px !important;
+  }
+  .purpleBlock {
+    margin-right: 0px !important;
+  }
+  .mintBlock {
+    padding-top: 55px !important;
+  }
+  .twoColumn {
+    margin-right: 0px !important;
+  }
+  .phone {
+    border-bottom-left-radius: 0px !important;
+  }
+  .largeBlock {
+    border-bottom-left-radius: 20px;
+    height: 430px !important;
+  }
+  .educationList {
+    justify-content: normal !important;
+  }
+}
+
+@media (max-width: 1199px) {
+  .educationList {
+    justify-content: center;
+  }
+}
+
 body {
   background-color: #191b44 !important;
   font-family: 'FuturaPTBook' !important;
@@ -19,7 +56,7 @@ body {
 }
 
 .largeBlock {
-  height: 620px !important;
+  height: 620px;
   border-bottom-right-radius: 20px;
   background-color: #e2939a;
   padding-top: 10px;
@@ -36,7 +73,7 @@ body {
 }
 
 .nav-item a {
-  color: white;
+  color: #fff !important;
 }
 
 .nav {
@@ -74,11 +111,11 @@ body {
   background-color: #313163;
   border-top-right-radius: 20px;
   padding: 40px !important;
-  font-size: 24px;
+  font-size: 3vh;
 }
 
 .secondBlock p {
-  font-size: 15px;
+  font-size: 2.1vh;
   margin-top: 30px;
   color: #b3b4d0;
 }
@@ -86,9 +123,8 @@ body {
 .gradientBlock {
   text-align: center;
   color: #1b1b48;
-  font-size: 115px;
   background: linear-gradient(to right, #f11986, orange);
-  padding-top: 70px;
+  padding-top: 80px;
   margin-right: 20px;
 }
 
@@ -104,17 +140,21 @@ body {
 .cardGradient {
   background: linear-gradient(to right, #f11986, orange);
   border: 0px !important;
-  height: 374px;
-  font-size: 1.6vh;
-  z-index: 200;
+  height: 390px;
+  font-size: 1.9vh;
+  z-index: 1;
 }
 
 .card h4 {
   font-size: 1.8vh !important;
 }
 
-.card img {
-  height: 20%;
+.card-body {
+  padding: 0.85rem !important;
+}
+
+.eduImg {
+  height: 100px;
 }
 
 .blueBlock {
@@ -131,8 +171,8 @@ body {
 .purpleBlock {
   background-color: #323164;
   text-align: center;
-  font-size: 32px;
-  padding: 140px 40px !important;
+  font-size: 3.6vh;
+  padding: 140px 40px;
   margin-right: 20px;
 }
 
