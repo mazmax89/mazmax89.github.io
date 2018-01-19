@@ -51,7 +51,7 @@
     <div class="row justify-content-center rowForMobile">
       <div class="col-md-7 col-12 col-xl-7 block gradientBlock " id="education">
         <a data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-          <img src="img/education.png" alt="education">
+          <img src="img/education.png" alt="education" data-toggle="tooltip" data-placement="top" title="Click me!">
         </a>
         <div class="collapse row justify-content-center" id="collapseExample">
           <div class="card card-body cardGradient">
@@ -97,18 +97,18 @@
         </div>
       </div>
       <div class="col-md-4 col-12  col-xl-4 block blueBlock">
-        <a class="link" target="_blank" href="https://github.com/mazmax89?tab=repositories">
-          <b><span style="color: #313063;">E</span>
-            <span style="color: yellow;">jou</span>
-            <span style="color: green;">r</span>
-            <span style="color: red;">nal</span>
+        <a class="link" target="_blank" href="https://drive.google.com/open?id=1O1jGg9du7R3sgnjiUeBkvtMcEHw3H0zK" data-toggle="tooltip" data-placement="top" title="Click me!">
+          <b><span style="color: #313063;">M</span>
+            <span style="color: yellow;">y</span>
+            <span style="color: green;">C</span>
+            <span style="color: red;">V</span>
           </b>
         </a>
       </div>
     </div>
     <div class="row justify-content-center rowForMobile">
       <div class="col-md-4 col-12  col-xl-4 block purpleBlock">
-        <a class="link" target="_blank" href="https://github.com/mazmax89?tab=repositories">
+        <a class="link" target="_blank" href="https://github.com/mazmax89/project-Idea" data-toggle="tooltip" data-placement="top" title="Click me!">
           <span>Mad Ideas</span>
           <i class="fa fa-heart" aria-hidden="true" style="color: #c70e0e;"></i>
         </a>
@@ -135,11 +135,14 @@
                 <img src="img/facebook.png" alt="github">
               </div>
             </a>
-            <a class="link" target="_blank" href="https://plus.google.com/u/0/107254484159529169785">
-              <div class="third contactsItem">
-                <img src="img/google+.png" alt="github">
-              </div>
-            </a>
+            <div class="third contactsItem">
+              <a class="link" target="_blank" href="https://plus.google.com/u/0/107254484159529169785">
+                <div class="call transition-rotate">
+                  <img src="img/google+.png" alt="github">
+                  <span>mazmax89@gmail.com</span>
+                </div>
+              </a>
+            </div>
             <div class="fourth contactsItem">
               <div class="call transition-rotate">
                 <img src="img/phone.png" alt="github">
@@ -151,7 +154,7 @@
         <div class="col-md-12 col-12 col-xl-12 block phone">
           <a class="link" target="_blank" href="https://github.com/mazmax89?tab=repositories">
             <i class="fa fa-phone" aria-hidden="true"></i>
-            <h5>Call Button Project</h5>
+            <h5>WE TRIAL</h5>
           </a>
         </div>
       </div>
@@ -168,6 +171,9 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/Chart.bundle.min.js"></script>
 <script type="text/javascript">
+  $(function() {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
   var ctx = document.getElementById("diagram").getContext('2d');
   var myPieChart = new Chart(ctx, {
     type: 'doughnut',
