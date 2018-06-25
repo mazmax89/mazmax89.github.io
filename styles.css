@@ -303,3 +303,27 @@ canvas {
 .transition-rotate:hover span {
   opacity: 1;
 }
+
+/* @keyframes go-left-right {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 20px;
+  }
+}
+
+@-webkit-keyframes go-left-right {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 20px;
+  }
+}
+
+.anim {
+  animation: go-left-right 3s infinite alternate;
+  -webkit-animation: go-left-right 3s infinite alternate;
+  position: relative;
+} */
