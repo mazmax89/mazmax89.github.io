@@ -12,6 +12,9 @@
 </head>
 
 <body>
+  <div class="loaderArea">
+    <div class="circle"></div>
+  </div>
   <div class="container mainContainer">
     <div class="row justify-content-end">
       <nav class="navbar navbar-expand-lg navbar-light justify-content-end">
@@ -166,10 +169,18 @@
     </div>
   </div>
 </body>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/Chart.bundle.min.js"></script>
+<script>
+  $(window).on('load', function() {
+    $preloader = $('.loaderArea'),
+      $loader = $preloader.find('.loader');
+    $loader.fadeOut();
+    $preloader.delay(450).fadeOut('slow');
+  });
+</script>
 <script type="text/javascript">
   $(function() {
     $('[data-toggle="tooltip"]').tooltip()

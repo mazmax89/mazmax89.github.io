@@ -3,34 +3,24 @@
   src: url(fonts/FuturaPTBook.otf);
 }
 
-@media (max-width: 767px) {
-  .gradientBlock {
-    margin-right: 0px !important;
+@-webkit-keyframes move {
+  0% {
+    left: 0;
   }
-  .rowForMobile {
-    padding: 0px 5px;
+  50% {
+    left: 100%;
+    -webkit-transform: rotate(450deg);
+    width: 150px;
+    height: 150px;
   }
-  .purpleBlock {
-    padding: 130px 20px !important;
+  75% {
+    left: 100%;
+    -webkit-transform: rotate(450deg);
+    width: 150px;
+    height: 150px;
   }
-  .purpleBlock {
-    margin-right: 0px !important;
-  }
-  .mintBlock {
-    padding-top: 55px !important;
-  }
-  .twoColumn {
-    margin-right: 0px !important;
-  }
-  .phone {
-    border-bottom-left-radius: 0px !important;
-  }
-  .largeBlock {
-    border-bottom-left-radius: 20px;
-    height: 430px !important;
-  }
-  .educationList {
-    justify-content: normal !important;
+  100 {
+    right: 100%;
   }
 }
 
@@ -38,6 +28,32 @@
   .educationList {
     justify-content: center;
   }
+}
+
+.loaderArea {
+  /* background: linear-gradient(90deg, #FF4E50 10%, #F9D423 90%); */
+  overflow: hidden;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100000;
+  background: #191b44;
+  width: 100%;
+}
+
+.circle {
+  margin-top: 350px;
+  position: absolute;
+  top: -30px;
+  margin-left: -30px;
+  height: 60px;
+  width: 60px;
+  left: 0;
+  background: #fff;
+  border-radius: 30%;
+  -webkit-animation: move 5s infinite;
 }
 
 body {
