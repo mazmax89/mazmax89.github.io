@@ -189,10 +189,9 @@
   var myPieChart = new Chart(ctx, {
     type: 'doughnut',
     data: {
-      labels: ["HTML, CSS", "React, Redux, JS, Bootstrap", "WebPack, Node, Express", "TypeScript, Rest, REST, MySQL, FireBase"],
+      labels: ["HTML, CSS", "React, Redux, JS, Bootstrap", "FireBase, WebPack, Node, Express", "TypeScript, Rest, REST, MySQL"],
       datasets: [{
-        label: '# of Votes',
-        data: [80, 60, 30, 20],
+        data: [40, 30, 20, 10],
         backgroundColor: [
           'rgba(27, 27, 72, 1)',
           'rgba(126, 202, 132, 1)',
@@ -206,7 +205,7 @@
     },
     options: {
       legend: {
-        display: false
+        display: true
       },
       responsive: true,
       tooltips: {
