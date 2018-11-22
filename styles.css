@@ -25,9 +25,8 @@
 	}
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 767px) {
 	.educationList {
-		justify-content: center;
 	}
 
 	.noMargin {
@@ -67,7 +66,7 @@
 
 body {
 	background-color: #191b44 !important;
-	font-family: 'FuturaPTBook' !important;
+	font-family: 'FuturaPTBook', serif !important;
 }
 
 .mainContainer {
