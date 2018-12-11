@@ -121,11 +121,14 @@
             </a>
         </div>
         <div class="col-md-7 col-12 col-xl-7 block mintBlock" id="exp">
-            <a class="link" target="_blank" href="https://github.com/mazmax89/ReactiveBoilerplate"
-               data-toggle="tooltip"
-               data-placement="top" title="Example of my projects. Click to view!">
-                <img src="img/reactLogo.png" alt="project example" class="offset-md-1 col-md-10">
-            </a>
+            <div class="row align-items-center">
+                <a class="link col-12 col-md-12 col-xl-12" target="_blank"
+                   href="https://github.com/mazmax89/ReactiveBoilerplate"
+                   data-toggle="tooltip"
+                   data-placement="top" title="Example of my projects. Click to view!">
+                    <img src="img/reactLogo.png" alt="project example" class="col-md-12 col-12 col-xl-12">
+                </a>
+            </div>
         </div>
     </div>
     <div class="row justify-content-center rowForMobile">
@@ -143,17 +146,17 @@
                         </div>
                     </a>
                     <div class="third contactsItem">
-                        <a class="link" target="_blank" href="https://plus.google.com/u/0/107254484159529169785">
+                        <a class="link" target="_blank" href="mailto:mazmax89@gmail.com">
                             <div class="call transition-rotate">
                                 <img src="img/google+.png" alt="github">
-                                <span>mazmax89@gmail.com</span>
+                                <span>Click to send mail!</span>
                             </div>
                         </a>
                     </div>
                     <div class="fourth contactsItem">
                         <div class="call transition-rotate">
                             <img src="img/phone.png" alt="github">
-                            <span>+48 796741722</span>
+                            <span>+48 796741722<br>mazmax89@gmail.com</span>
                         </div>
                     </div>
                 </div>
@@ -181,49 +184,50 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/Chart.bundle.min.js"></script>
 <script>
-	$(window).on('load', function () {
-		$preloader = $('.loaderArea'),
-			$loader = $preloader.find('.loader');
-		$loader.fadeOut();
-		$preloader.delay(50).fadeOut('slow');
-	});
+    $(window).on('load', function () {
+        $preloader = $('.loaderArea'),
+            $loader = $preloader.find('.loader');
+        $loader.fadeOut();
+        $preloader.delay(50).fadeOut('slow');
+    });
 </script>
 <script type="text/javascript">
-	$(function () {
-		$('[data-toggle="tooltip"]').tooltip();
-	});
-	var ctx = document.getElementById('diagram').getContext('2d');
-	var myPieChart = new Chart(ctx, {
-		type: 'doughnut',
-		data: {
-			labels: ['HTML, CSS, JS', 'React, Redux, Bootstrap, FireBase, SCSS',
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+    var ctx = document.getElementById('diagram').getContext('2d');
+    var myPieChart = new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+            labels: ['HTML, CSS, JS', 'React, Redux, Bootstrap, FireBase, SCSS',
                 'WebPack, Node, Express', 'TypeScript, REST, MySQL, Java,'],
-			datasets: [{
-				data: [40, 30, 20, 10],
-				backgroundColor: [
-					'rgba(27, 27, 72, 1)',
-					'rgba(126, 202, 132, 1)',
-					'rgba(187, 40, 100, 1)',
-					'rgba(151, 134, 189, 1)'
-				],
-				borderColor: 'rgba(226, 147, 154, 1)',
-				borderWidth: 7,
-				hoverBorderWidth: 0
-			}],
-		},
-		options: {legend: {
-				display: true
-			},
-			responsive: true,
-			tooltips: {
-				backgroundColor: 'rgba(255, 255, 255, 1)',
-				bodyFontColor: '#343a40',
-				xPadding: 5,
-				yPadding: 15,
-				bodyFontSize: 14,
-			}
-		},
-	});
+            datasets: [{
+                data: [40, 30, 20, 10],
+                backgroundColor: [
+                    'rgba(27, 27, 72, 1)',
+                    'rgba(126, 202, 132, 1)',
+                    'rgba(187, 40, 100, 1)',
+                    'rgba(151, 134, 189, 1)'
+                ],
+                borderColor: 'rgba(226, 147, 154, 1)',
+                borderWidth: 7,
+                hoverBorderWidth: 0
+            }],
+        },
+        options: {
+            legend: {
+                display: true
+            },
+            responsive: true,
+            tooltips: {
+                backgroundColor: 'rgba(255, 255, 255, 1)',
+                bodyFontColor: '#343a40',
+                xPadding: 5,
+                yPadding: 15,
+                bodyFontSize: 14,
+            }
+        },
+    });
 </script>
 
 </html>
