@@ -75,7 +75,7 @@ body {
 
 .block {
     height: 300px;
-    box-shadow: -1px 1px 71px 1px black;
+    box-shadow: -1px 1px 20px 1px black;
     margin-top: 20px;
 }
 
@@ -131,7 +131,6 @@ body {
 
 .secondBlock {
     color: #fff;
-    font-size: 20px;
     background-color: #313163;
     border-top-right-radius: 20px;
     padding: 40px !important;
@@ -163,7 +162,7 @@ body {
 
 .cardGradient {
     background: linear-gradient(to right, #f11986, orange);
-    border: 0px !important;
+    border: 0 !important;
     height: 390px;
     font-size: 1.9vh;
     z-index: 1;
